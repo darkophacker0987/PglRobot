@@ -106,9 +106,9 @@ CYBERKING_IMG = "https://telegra.ph/file/f1d7b30b05ba9f0dbf4e5.jpg"
 CYBERKINGG_IMG = "https://telegra.ph/file/e8881931bc000c75e8f13.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting [Gaurav Verma](https://t.me/iisgaurav).
+ You can support the project by contacting [CyberKing](https://t.me/Itz_me_cyberking).
  Using [PayPal](paypal.me/iisgaurav).
- Those who cannot provide monetary support are welcome to help us develop the bot at @VegaCodes.
+.
  """
 
 IMPORTED = {}
@@ -235,17 +235,17 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="SUPPORT ⚡️",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                url=f"https://t.me/{BONDOFBESTIZZ}",
                             ),
                             InlineKeyboardButton(
                                 text="UPDATES ⚡️",
-                                url="https://t.me/VCUpdates",
+                                url="https://t.me/incredible_spam_bot",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="SOURCE CODE ⚡️",
-                                url="https://github.com/iisgaurav/CYBERKING",
+                                text="OWNER ⚡️",
+                                url="https://t.me/Itz_me_cyberking",
                             ),
                         ],
                     ]
@@ -580,7 +580,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1100735944 and DONATION_LINK:
+        if OWNER_ID != 1983423242 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
