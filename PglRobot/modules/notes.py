@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import PglRobot.modules.sql.notes_sql as sql
-from PglRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from PglRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from PglRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from PglRobot.modules.helper_funcs.msg_types import get_note_type
-from PglRobot.modules.helper_funcs.string_handling import (
+import CYBERKING.modules.sql.notes_sql as sql
+from CYBERKING import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from CYBERKING.modules.disable import DisableAbleCommandHandler
+from CYBERKING.modules.helper_funcs.handlers import MessageHandlerChecker
+from CYBERKING.modules.helper_funcs.chat_status import user_admin, connection_status
+from CYBERKING.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from CYBERKING.modules.helper_funcs.msg_types import get_note_type
+from CYBERKING.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (

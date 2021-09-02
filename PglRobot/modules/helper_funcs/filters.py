@@ -1,4 +1,4 @@
-from PglRobot import DEV_USERS, DRAGONS, DEMONS
+from CYBERKING import DEV_USERS, DRAGONS, DEMONS
 from telegram import Message
 from telegram.ext import BaseFilter
 

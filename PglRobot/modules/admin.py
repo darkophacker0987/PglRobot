@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from PglRobot import DRAGONS, dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.chat_status import (
+from CYBERKING import DRAGONS, dispatcher
+from CYBERKING.modules.disable import DisableAbleCommandHandler
+from CYBERKING.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -16,12 +16,12 @@ from PglRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from PglRobot.modules.helper_funcs.extraction import (
+from CYBERKING.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from PglRobot.modules.log_channel import loggable
-from PglRobot.modules.helper_funcs.alternate import send_message
+from CYBERKING.modules.log_channel import loggable
+from CYBERKING.modules.helper_funcs.alternate import send_message
 
 
 @run_async

@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import PglRobot.modules.sql.users_sql as sql
-from PglRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from PglRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from PglRobot.modules.sql.users_sql import get_all_users
+import CYBERKING.modules.sql.users_sql as sql
+from CYBERKING import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from CYBERKING.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from CYBERKING.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5

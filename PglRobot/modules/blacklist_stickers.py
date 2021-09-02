@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import PglRobot.modules.sql.blsticker_sql as sql
-from PglRobot import LOGGER, dispatcher
-from PglRobot.modules.connection import connected
-from PglRobot.modules.disable import DisableAbleCommandHandler
-from PglRobot.modules.helper_funcs.alternate import send_message
-from PglRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from PglRobot.modules.helper_funcs.misc import split_message
-from PglRobot.modules.helper_funcs.string_handling import extract_time
+import CYBERKING.modules.sql.blsticker_sql as sql
+from CYBERKING import LOGGER, dispatcher
+from CYBERKING.modules.connection import connected
+from CYBERKING.modules.disable import DisableAbleCommandHandler
+from CYBERKING.modules.helper_funcs.alternate import send_message
+from CYBERKING.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from CYBERKING.modules.helper_funcs.misc import split_message
+from CYBERKING.modules.helper_funcs.string_handling import extract_time
 
-from PglRobot.modules.log_channel import loggable
-from PglRobot.modules.warns import warn
+from CYBERKING.modules.log_channel import loggable
+from CYBERKING.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler

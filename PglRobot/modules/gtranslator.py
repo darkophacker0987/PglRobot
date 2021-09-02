@@ -3,8 +3,8 @@ from google_trans_new import LANGUAGES, google_translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from PglRobot import dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
+from CYBERKING import dispatcher
+from CYBERKING.modules.disable import DisableAbleCommandHandler
 
 
 @run_async

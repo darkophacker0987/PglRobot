@@ -11,8 +11,8 @@ from telegram import TelegramError, Update
 from telegram.ext import run_async, CallbackContext
 from telegram.utils.helpers import mention_html
 
-from PglRobot import dispatcher
-from PglRobot.modules.disable import DisableAbleCommandHandler
+from CYBERKING import dispatcher
+from CYBERKING.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 

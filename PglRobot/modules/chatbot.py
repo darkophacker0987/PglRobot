@@ -3,14 +3,14 @@ import html
 # AI module using Intellivoid's Coffeehouse API by @TheRealPhoenix
 from time import sleep, time
 
-import PglRobot.modules.sql.chatbot_sql as sql
+import CYBERKING.modules.sql.chatbot_sql as sql
 from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 from coffeehouse.lydia import LydiaAI
-from PglRobot import AI_API_KEY, OWNER_ID, SUPPORT_CHAT, dispatcher
-from PglRobot.modules.helper_funcs.chat_status import user_admin
-from PglRobot.modules.helper_funcs.filters import CustomFilters
-from PglRobot.modules.log_channel import gloggable
+from CYBERKING import AI_API_KEY, OWNER_ID, SUPPORT_CHAT, dispatcher
+from CYBERKING.modules.helper_funcs.chat_status import user_admin
+from CYBERKING.modules.helper_funcs.filters import CustomFilters
+from CYBERKING.modules.log_channel import gloggable
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import (
@@ -80,7 +80,7 @@ def remove_chat(update: Update, context: CallbackContext):
 
 def check_message(context: CallbackContext, message):
     reply_msg = message.reply_to_message
-    if message.text.lower() == "PglRobot":
+    if message.text.lower() == "CYBERKING":
         return True
     if reply_msg:
         if reply_msg.from_user.id == context.bot.get_me().id:
@@ -142,7 +142,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Chatbot utilizes the CoffeeHouse API and allows PglRobot to talk and provides a more interactive group chat experience.
+Chatbot utilizes the CoffeeHouse API and allows CYBERKING to talk and provides a more interactive group chat experience.
 
 *Commands:* 
 *Admins only:*

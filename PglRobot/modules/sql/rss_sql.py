@@ -1,6 +1,6 @@
 import threading
 
-from PglRobot.modules.sql import BASE, SESSION
+from CYBERKING.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Integer, UnicodeText
 
 

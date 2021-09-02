@@ -1,7 +1,7 @@
 import threading
 
-from PglRobot import dispatcher
-from PglRobot.modules.sql import BASE, SESSION
+from CYBERKING import dispatcher
+from CYBERKING.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,

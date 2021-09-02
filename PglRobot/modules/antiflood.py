@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from PglRobot import TIGERS, WOLVES, dispatcher
-from PglRobot.modules.helper_funcs.chat_status import (
+from CYBERKING import TIGERS, WOLVES, dispatcher
+from CYBERKING.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from PglRobot.modules.log_channel import loggable
-from PglRobot.modules.sql import antiflood_sql as sql
+from CYBERKING.modules.log_channel import loggable
+from CYBERKING.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from PglRobot.modules.helper_funcs.string_handling import extract_time
-from PglRobot.modules.connection import connected
-from PglRobot.modules.helper_funcs.alternate import send_message
-from PglRobot.modules.sql.approve_sql import is_approved
+from CYBERKING.modules.helper_funcs.string_handling import extract_time
+from CYBERKING.modules.connection import connected
+from CYBERKING.modules.helper_funcs.alternate import send_message
+from CYBERKING.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 

@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from PglRobot.modules.sql import SESSION, BASE
+from CYBERKING.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):

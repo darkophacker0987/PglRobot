@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from PglRobot import OWNER_ID, dispatcher
-from PglRobot.modules.helper_funcs.extraction import extract_user
-from PglRobot.modules.sql.users_sql import get_user_com_chats
+from CYBERKING import OWNER_ID, dispatcher
+from CYBERKING.modules.helper_funcs.extraction import extract_user
+from CYBERKING.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters

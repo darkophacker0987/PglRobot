@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from PglRobot import LOGGER, dispatcher
-from PglRobot.modules.disable import DisableAbleMessageHandler
-from PglRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from CYBERKING import LOGGER, dispatcher
+from CYBERKING.modules.disable import DisableAbleMessageHandler
+from CYBERKING.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 

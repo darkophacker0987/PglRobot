@@ -1,6 +1,6 @@
 import threading
 from sqlalchemy import Column, String
-from PglRobot.modules.sql import BASE, SESSION
+from CYBERKING.modules.sql import BASE, SESSION
 
 #   |----------------------------------|
 #   |  Test Module by @EverythingSuckz |
